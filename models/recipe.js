@@ -32,4 +32,10 @@ RecipeSchema.virtual('url').get(function () {
     return `/cookbook/recipe/${this._id}`;
 });
 
+// user: {
+//     type: Schema.Types.ObjectId,
+//     ref: 'User',
+//     required: true
+// },
+
 module.exports = mongoose.model('Recipe', RecipeSchema);
